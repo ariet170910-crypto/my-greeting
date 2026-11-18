@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поздравляю тебя!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header>
+        <div class="logo">✦ CELEBRATION</div>
+        <div class="header-text">Мир красивых поздравлений</div>
+    </header>
+
+    <main class="container">
+
+        <div class="star">✦</div>
+
+        <p class="subtitle">SPECIAL MOMENT FOR YOU</p>
+
+        <h1>
+            Поздравляю <br>
+            <span>тебя!</span> 🥳
+        </h1>
+
+        <p class="description">
+            Каждый особенный день заслуживает
+            красивых слов. Создай своё поздравление!
+        </p>
+
+        <div class="form-box">
+
+            <label for="name">Как тебя зовут?</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Введи своё имя..."
+            >
+
+            <label for="occasion">Выбери праздник</label>
+            <select id="occasion">
+                <option value="birthday">🎂 День рождения</option>
+                <option value="march8">🌷 8 Марта</option>
+                <option value="newyear">🎄 Новый год</option>
+                <option value="graduation">🎓 Выпускной</option>
+                <option value="success">🏆 Достижение цели</option>
+                <option value="just">💛 Просто так</option>
+            </select>
+
+            <button id="createBtn">
+                Создать поздравление ✨
+            </button>
+
+        </div>
+
+        <section id="result" class="result hidden">
+            <div class="result-star">✧</div>
+            <h2 id="resultTitle"></h2>
+            <p id="resultText"></p>
+            <button id="againBtn" class="again">
+                Создать ещё раз ↻
+            </button>
+        </section>
+
+        <p class="footer">
+            Made with ✦ and a little magic
+        </p>
+
+    </main>
+
+    <div id="effects"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
